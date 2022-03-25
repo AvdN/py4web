@@ -5,7 +5,7 @@ The Database Abstraction Layer (DAL)
 DAL introduction
 ----------------
 
-py4web rely on a database abstraction layer (DAL), an API that maps
+py4web rely on a database abstraction layer (DAL), an API that maps/
 Python objects into database objects such as queries, tables, and
 records. The DAL dynamically generates the SQL in real time using the
 specified dialect for the database back end, so that you do not have to
@@ -124,7 +124,7 @@ Row
    .. code:: python
 
       for row in rows:
-          print row.myfield
+          print(row.myfield)
 
 Query
    is an object that represents a SQL “where” clause:
@@ -298,8 +298,7 @@ the database is running from localhost on its default port and is named
 Database              Connection string
 ====================  =======================================================
 **SQLite**            ``sqlite://storage.sqlite``
-**MySQL**             ``mysql://username:password@localhost/test?set_encoding
-                      =utf8mb4``
+**MySQL**             ``mysql://username:password@localhost/test?set_encoding=utf8mb4``
 **PostgreSQL**        ``postgres://username:password@localhost/test``
 **MSSQL (legacy)**    ``mssql://username:password@localhost/test``
 **MSSQL (>=2005)**    ``mssql3://username:password@localhost/test``
